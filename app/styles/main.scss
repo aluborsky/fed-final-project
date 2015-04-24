@@ -14,7 +14,9 @@
   Base Styles
 ******************************************************************************/
 body {
-	padding-top: 46px;
+	margin-top: 46px;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #2c3e50;
 }
 
 section {
@@ -23,7 +25,8 @@ section {
 
 h1, h2 {
 	text-align: center;
-	text-decoration: underline;
+	text-transform: uppercase;
+	font-size: 3em;
 }
 
 header {
@@ -34,18 +37,46 @@ section > img {
 	padding: 15px;
 }
 
-.about {
-	background-color: #94BED0;
+p {
+	font-size: 1.6em;
+	padding: 20px;
 }
 
-.work {
-	background-color: #B6C6CD;
+.about-text {
+	padding: 0;
 }
 
-.contact {
-	background-color: #94BED0;
+#home {
+	display: block;
+	width: 100%;
+	background: #18bc9c;
+	/*background: url('http://p1.pichost.me/i/14/1368941.jpg') no-repeat center center scroll;*/
 }
 
+.headline {
+	padding: 120px 0;
+}
+
+.headline h1 {
+	font-size: 5em;
+	background: transparent;
+	color: #fff;
+	text-transform: none;
+}
+
+.headline h2 {
+	font-size: 3em;
+	color: #fff;
+	text-transform: none;
+}
+
+#about, #contact {
+	background: #fff;
+}
+
+#work {
+	background: #18bc9c;
+}
 
 
 /*****************************************************************************

@@ -15,35 +15,60 @@
 ******************************************************************************/
 body {
 	margin-top: 46px;
-	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #2c3e50;
 }
 
 section {
-	padding: 5px;
+	padding: 65px 0;
 }
 
 h1, h2 {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 3em;
+}
+
+.headline h1 {
+	font-size: 4.5em;
+	color: #fff;
+}
+
+.headline h2 {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #2c3e50;
+	font-size: 2.0em;
+	color: #fff;
+	text-transform: none;
+}
+
+hr {
+	max-width: 250px;
+	margin: 25px auto;
+}
+
+hr.hr-white {
+	border-top: solid 5px #fff;
+}
+
+hr.hr-blue {
+	border-top: solid 5px #2c3e50;
 }
 
 header {
 	background-color: #B6C6CD;
 }
 
-section > img {
-	padding: 15px;
+img {
+	display: block;
+	margin: 0 auto;
 }
+
+
 
 p {
-	font-size: 1.6em;
-	padding: 20px;
-}
-
-.about-text {
-	padding: 0;
+	font-size: 1.5em;
 }
 
 #home {
@@ -54,21 +79,9 @@ p {
 }
 
 .headline {
-	padding: 120px 0;
+	padding: 80px 0;
 }
 
-.headline h1 {
-	font-size: 5em;
-	background: transparent;
-	color: #fff;
-	text-transform: none;
-}
-
-.headline h2 {
-	font-size: 3em;
-	color: #fff;
-	text-transform: none;
-}
 
 #about, #contact {
 	background: #fff;
@@ -78,6 +91,9 @@ p {
 	background: #18bc9c;
 }
 
+.row {
+	padding: 30px 0;
+}
 
 /*****************************************************************************
   Layout Styles

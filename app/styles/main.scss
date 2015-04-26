@@ -43,6 +43,10 @@ h1, h2 {
 	text-transform: none;
 }
 
+.h2-white {
+	color: #fff;
+}
+
 hr {
 	max-width: 250px;
 	margin: 25px auto;
@@ -92,6 +96,16 @@ p {
 	background: #18bc9c;
 }
 
+footer {
+	background: #2c3e50; 
+}
+
+footer p {
+	color: #fff;
+	font-size: 1.1em;
+	padding: 10px;
+}
+
 .work-item {
 	margin: 12px 0;
 }
@@ -116,7 +130,17 @@ p {
 /*****************************************************************************
   Module Styles
 ******************************************************************************/
+.btn-success {
+	background-color: #18bc9c;
+	border-color: #18bc9c;
+}
 
+.btn-success:hover {
+	background-color: #128f76;
+	border-color: #128f76;
+}
 
-
-
+.btn-lg {
+	padding: 18px 27px;
+	font-size: 19px;
+}

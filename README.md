@@ -1,3 +1,3 @@
-# final_project
+# FED - Final Project
 
-You should put a description of your project here, plus any setup instructions for other developers, if necessary.
+Final Project will consist of a portfolio site in a one page, parallax style, built with Bootstrap.

@@ -136,6 +136,7 @@ footer p {
 .navbar-default .navbar-nav > li > a,
  {
 	color: #fff;
+	letter-spacing: 1px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -153,6 +154,22 @@ footer p {
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
 	color: #18bc9c;
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 15px 0;
+        transition: background .3s ease-in-out, padding .3s ease-in-out;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+     	font-size: 2em;
+     	transition: all .3s;
+     }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
 }
 
 

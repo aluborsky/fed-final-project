@@ -2,6 +2,6 @@
 
 (function($) {
   $(document).ready(function() {
-    // Add your jQuery code here
+    // $('.img-holder').imageScroll();
   });
 })(jQuery);

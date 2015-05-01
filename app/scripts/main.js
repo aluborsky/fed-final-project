@@ -4,7 +4,9 @@
   $(document).ready(function() {
 
   	//parallax effect
-    //$('.img-holder').imageScroll();
+    	$('.img-holder').imageScroll({
+    		coverRatio:1
+    	});
     
     //scrollspy
     $('body').scrollspy({

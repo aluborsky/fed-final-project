@@ -80,9 +80,9 @@ p {
 	background-size: cover;*/
 }
 
-.headline {
+/*.section-padding {
 	padding: 80px 0;
-}
+}*/
 
 
 #about, #contact {
@@ -164,8 +164,10 @@ footer p {
 }
 
 .navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:active,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:visited {
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:visited  {
 	color: #fff;
 	background-color: #1a242f;
 }
@@ -185,6 +187,37 @@ footer p {
         padding: 0;
     }
 }
+
+.parallax-image{
+  transform: translate(-50%, -50%);
+  top: 225px;
+  left: 50%;
+  position: absolute;
+ }
+
+
+.parallax-h1 {
+  transform: translate(-50%, -50%);
+  top: 525px;
+  left: 50%;
+  position: absolute;
+ }
+
+
+.parallax-hr {
+  transform: translate(-50%, -50%);
+  top: 575px;
+  left: 50%;
+  position: absolute;
+ }
+
+.parallax-h2 {
+  transform: translate(-50%, -50%);
+  top: 725px;
+  left: 50%;
+  position: absolute;
+ }
+
 
 
 /*****************************************************************************

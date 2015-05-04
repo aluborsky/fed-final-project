@@ -5,7 +5,7 @@
 
   	//parallax effect
     	$('.img-holder').imageScroll({
-    		coverRatio:1
+    		coverRatio: 0.7
     	});
     
     //scrollspy
@@ -33,7 +33,6 @@
     $(function () {
     	$('[data-toggle="tooltip"]').tooltip();
     });
-
 
   });
 })(jQuery);

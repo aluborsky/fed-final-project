@@ -2,15 +2,13 @@
   final_project
 ******************************************************************************/
 
-
 @import '../../bower_components/bourbon/dist/_bourbon.scss';
 @import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
-
-
 
 /*****************************************************************************
   Base Styles
 ******************************************************************************/
+
 body {
 	position: relative;
 	margin-top: 46px;
@@ -24,43 +22,14 @@ section {
 
 h1, h2 {
 	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 3em;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 3em;
-}
-
-.headline h1 {
-	font-size: 4.5em;
-	color: #fff;
-}
-
-.headline h2 {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #2c3e50;
-	font-size: 2.0em;
-	color: #fff;
-	text-transform: none;
-}
-
-.h2-white {
-	color: #fff;
 }
 
 hr {
-	max-width: 250px;
 	margin: 25px auto;
-}
-
-hr.hr-white {
-	border-top: solid 5px #fff;
-}
-
-hr.hr-blue {
-	border-top: solid 5px #2c3e50;
-}
-
-header {
-	background-color: #B6C6CD;
+	max-width: 250px;
 }
 
 img {
@@ -72,18 +41,89 @@ p {
 	font-size: 1.5em;
 }
 
+footer {
+	background: #2c3e50; 
+}
+
+footer p {
+	padding: 10px;
+	color: #fff;
+	font-size: 1.1em;
+}
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+
+.headline h1 {
+	padding: 20px 10px;
+	font-size: 3.8em;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.parallax-h1 {
+  transform: translate(-50%, -50%);
+  top: 140px;
+  left: 50%;
+  position: absolute;
+}
+
+@media(min-width:768px) {
+	.headline h1 {
+		padding: 20px 10px;
+		font-size: 4.5em;
+	}
+	.parallax-h1 {
+		top: 200px;
+	}
+}
+
+.headline h2 {
+	padding: 20px 10px;
+	font-size: 1.5em;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #2c3e50;
+	color: #fff;
+	text-transform: none;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.parallax-h2 {
+  transform: translate(-50%, -50%);
+  top: 350px;
+  left: 50%;
+  position: absolute;
+ }
+
+@media(min-width:768px) {
+	.headline h2 {
+		padding: 20px 10px;
+		font-size: 2.0em;
+	}
+	.parallax-h2 {
+		top: 375px;
+	}
+}
+
+.h2-white {
+	color: #fff;
+}
+
+hr.hr-white {
+	border-top: solid 5px #fff;
+}
+
+hr.hr-blue {
+	border-top: solid 5px #2c3e50;
+}
+
 #home {
 	display: block;
 	width: 100%;
 	background: #18bc9c;
-	/*background: url('http://p1.pichost.me/i/14/1368941.jpg') no-repeat;
-	background-size: cover;*/
+
 }
-
-/*.section-padding {
-	padding: 80px 0;
-}*/
-
 
 #about, #contact {
 	background: #fff;
@@ -91,16 +131,6 @@ p {
 
 #work {
 	background: #18bc9c;
-}
-
-footer {
-	background: #2c3e50; 
-}
-
-footer p {
-	color: #fff;
-	font-size: 1.1em;
-	padding: 10px;
 }
 
 .work-item {
@@ -111,19 +141,11 @@ footer p {
 	padding: 20px;
 }
 
-/*.navbar-default {
-	text-transform: uppercase;
-	background-color: #2c3e50;
-}
-
-.navbar, .navbar-default .navbar-toggle, .navbar-brand {
-	border-color: #2c3e50;
-	color: #fff;
-}*/
-
 /*****************************************************************************
-  Layout Styles
+  Module Styles
 ******************************************************************************/
+
+/* ---------- navbar ---------- */
 .navbar {
 	text-transform: uppercase;
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -188,45 +210,11 @@ footer p {
     }
 }
 
-.parallax-image{
-  transform: translate(-50%, -50%);
-  top: 225px;
-  left: 50%;
-  position: absolute;
- }
-
-
-.parallax-h1 {
-  transform: translate(-50%, -50%);
-  top: 525px;
-  left: 50%;
-  position: absolute;
- }
-
-
-.parallax-hr {
-  transform: translate(-50%, -50%);
-  top: 575px;
-  left: 50%;
-  position: absolute;
- }
-
-.parallax-h2 {
-  transform: translate(-50%, -50%);
-  top: 725px;
-  left: 50%;
-  position: absolute;
- }
-
-
-
-/*****************************************************************************
-  Module Styles
-******************************************************************************/
+/* ---------- web form ---------- */
 .form-control {
+	padding: 15px;
 	height: 4em;
 	font-size: 1.5em;
-	padding: 15px;
 }
 
 .btn-success {
@@ -243,4 +231,22 @@ footer p {
 .btn-lg {
 	padding: 18px 27px;
 	font-size: 19px;
+}
+
+/* ---------- modal window ---------- */
+.modal-content {
+	border-radius: 0px;
+}
+
+.modal-footer {
+	padding: 10px 15px 10px 15px;
+}
+
+p.modal-text {
+	margin: 10px 0 10px 2px;
+	font-size: 1.1em;
+}
+
+button.close {
+	padding-bottom: 12px;
 }

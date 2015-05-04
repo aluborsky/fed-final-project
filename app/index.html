@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -9,18 +9,15 @@
     <!-- build:css styles/vendor.css -->
     <link rel="stylesheet" type="text/css" href="../bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css">
-    
     <!-- endbuild -->
 
     <link rel="stylesheet" href="styles/main.css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-    
+    <!-- endbuild -->  
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
@@ -38,7 +35,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#work">Work</a></li>
+              <li><a href="#work">Portfolio</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -48,11 +45,9 @@
     <header id="home">
       <div class="headline">
         <div class="container"> 
-          <img class="img-responsive img-holder" data-image="http://p1.pichost.me/i/14/1368941.jpg">
-          <img class="img-responsive parallax-image" src="http://placehold.it/256x256" />
-          <h1 class="parallax-h1">Welcome to my webpage!</h1>
-          <!-- <hr class="hr-white"> -->
-          <h2 class="parallax-h2">It will blow your mind all over the place.</h2>
+          <img class="img-responsive img-holder" data-image="images/header.png">
+          <h1 class="parallax-h1">Hello, I'm Andrew!</h1>
+          <h2 class="parallax-h2">I like coding, analytics, technology, and mountains.</h2>
         </div>
       </div>
     </header>
@@ -61,7 +56,9 @@
       <h2>About</h2>
       <hr class="hr-blue">
         <div class="container">
-        <p>Description about how awesome I am. Make sure to use lots of adjectives and highlight the background on those words.</p>
+        <p>Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.</p>
+        
+        <!-- social media icon grid -->
         <div class="row social">
           <div class="col-xs-4"><a href="http://www.facebook.com/andrew.luborsky" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook"><img class="img-social" src="../images/social/fb.png"></a></div>
           <div class="col-xs-4"><a href="http://twitter.com/aluborsky" target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter"><img class="img-social" src="../images/social/twitter.png"></div>
@@ -71,11 +68,11 @@
     </section>
         
     <section id="work">
-      <h2 class="h2-white">Work</h2>
+      <h2 class="h2-white">Portfolio</h2>
       <hr class="hr-white">
       <div class="container">
         <div class="row">
-          <div class="col-sm-4 work-item"><a href="#" data-toggle="modal" data-target="#myModal"><img class="img-responsive center-block" src="http://placehold.it/1000x750" /></a></div>
+          <div class="col-sm-4 work-item"><a href="#" data-toggle="modal" data-target="#modal-1"><img class="img-responsive center-block" src="http://placehold.it/1000x750" /></a></div>
           <div class="col-sm-4 work-item"><img class="img-responsive center-block" src="http://placehold.it/1000x750" /></div>
           <div class="col-sm-4 work-item"><img class="img-responsive center-block" src="http://placehold.it/1000x750" /></div>
           <div class="col-sm-4 work-item"><img class="img-responsive center-block" src="http://placehold.it/1000x750" /></div>
@@ -83,24 +80,24 @@
           <div class="col-sm-4 work-item"><img class="img-responsive center-block" src="http://placehold.it/1000x750" /></div>
         </div>
 
-      <!-- Modal -->
-      <div class="container">
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal Content -->
-          <div class="modal-content">
-            <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <img class="img-responsive center-block" src="http://placehold.it/1000x1000" />
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- modal windwos -->
+        <div class="container">
+        <div id="modal-1" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- modal content -->
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <img class="img-responsive center-block" src="http://placehold.it/1000x1000" />
+                <p class="modal-text">Japan, 2015</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      </div>
-
+        </div>
 
       </div>
     </section>
@@ -134,11 +131,11 @@
       </div>
     </footer>
 
-      <!-- build:js scripts/main.js -->
-      <script src="../bower_components/jquery/dist/jquery.js"></script>
-      <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
-      <script src="../bower_components/Parallax-ImageScroll/jquery.imageScroll.js"></script>
-      <script src="scripts/main.js"></script>
-      <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/Parallax-ImageScroll/jquery.imageScroll.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

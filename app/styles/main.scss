@@ -37,6 +37,11 @@ img {
 	margin: 0 auto;
 }
 
+body:hover  {
+	opacity: 1.0;
+	background: rgba(255, 255, 255, 0.7);
+}
+
 p {
 	font-size: 1.5em;
 }
@@ -118,6 +123,14 @@ hr.hr-blue {
 	border-top: solid 5px #2c3e50;
 }
 
+.work-item {
+	margin: 12px 0;
+}
+
+.social {
+	padding: 20px;
+}
+
 #home {
 	display: block;
 	width: 100%;
@@ -130,15 +143,7 @@ hr.hr-blue {
 }
 
 #work {
-	background: #18bc9c;
-}
-
-.work-item {
-	margin: 12px 0;
-}
-
-.social {
-	padding: 20px;
+	background: #7E8384;
 }
 
 /*****************************************************************************
@@ -182,7 +187,7 @@ hr.hr-blue {
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
-	color: #18bc9c;
+	color: #7E8384;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -218,14 +223,14 @@ hr.hr-blue {
 }
 
 .btn-success {
-	background-color: #18bc9c;
-	border-color: #18bc9c;
-	box-shadow: 0 3px 0 #0F7661;
+	background-color: #405060;
+	border-color: #405060;
+	box-shadow: 0 3px 0 #1a242f;
 }
 
 .btn-success:hover {
-	background-color: #128f76;
-	border-color: #128f76;
+	background-color: #1a242f;
+	border-color: #1a242f;
 }
 
 .btn-lg {

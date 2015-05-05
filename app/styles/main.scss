@@ -37,11 +37,6 @@ img {
 	margin: 0 auto;
 }
 
-body:hover  {
-	opacity: 1.0;
-	background: rgba(255, 255, 255, 0.7);
-}
-
 p {
 	font-size: 1.5em;
 }
@@ -129,6 +124,11 @@ hr.hr-blue {
 
 .social {
 	padding: 20px;
+}
+
+.img-opacity:hover {
+	opacity: 0.6;
+	transition: all ease-in-out .4s;
 }
 
 #home {
@@ -245,6 +245,12 @@ hr.hr-blue {
 
 .modal-footer {
 	padding: 10px 15px 10px 15px;
+}
+
+@media(min-width:768px) {
+	.modal-dialog {
+		width: 920px;
+	}
 }
 
 p.modal-text {
